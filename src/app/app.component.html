@@ -9,5 +9,8 @@
   <ng-template #odd>
     <span>es impar</span>
   </ng-template> -->
-  <app-custom-button [style]= "num%2===0 ? 'green' : 'red'" [text]="'Click me!' + num.toString()"></app-custom-button>
+  <app-custom-button [style]= "num%2===0 ? 'green' : 'red'" 
+  [text]="'Click me!' + num" 
+  [value] = "num" 
+  (returnValue)="showValue($event)"></app-custom-button>
 </div>

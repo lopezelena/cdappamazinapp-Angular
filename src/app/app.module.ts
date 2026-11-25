@@ -3,16 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CustomButtonComponent } from './custom-button/custom-button.component';
+import { CustomModuleModule } from './custom-module/custom-module.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CustomButtonComponent
+    AppComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CustomModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

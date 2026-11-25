@@ -14,4 +14,8 @@ export class AppComponent {
     this.number = a;
     return a + b;
   }
+
+  showValue(value:number){
+    console.log(value)
+  }
 }
