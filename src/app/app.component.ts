@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cdappamazingapp';
+  title = 'CampusDual';
+  number!: number;
+  arrNum: number[] = [1, 2, 3, 4, 5]
+ 
+  sumNum(a: number, b: number): number{
+    this.number = a;
+    return a + b;
+  }
 }
